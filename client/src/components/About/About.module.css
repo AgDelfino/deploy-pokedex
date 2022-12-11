@@ -1,0 +1,77 @@
+.container{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../images/pokemon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 700px;
+  height: 450px;
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 430px;
+  margin-top: 60px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+
+.about_title{
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 20px;
+    color: #ffce31;
+    text-shadow: -2px -2px 1px #373299, 2px 2px 1px #373299, -2px 2px 1px #373299, 2px -2px 1px #373299, 8px 9px 1px black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.content p{
+   font-size: 17px;
+   text-align: center;
+   color: #ffce31;
+   font-weight: bold;
+   text-shadow: -2px -2px 1px #373299, 2px 2px 1px #373299, -2px 2px 1px #373299, 2px -2px 1px #373299, 8px 9px 9px black;
+   
+}
+
+.content a{
+   text-decoration: none;
+   font-size: 20px;
+   color: white;
+ }
+
+ .exit_button {
+    display: flex;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 15px;
+    top: 15px;
+    border-radius: 15px;
+    background-color: #d33f59;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #e1def1;
+    transition: 0.1s ease-in-out all;
+    align-items: center;
+  }
+  
+  .exit_button svg {
+    stroke-width: 3px;
+  }
+  
+  .exit_button:hover {
+    background-color: #e1def1;
+    color: #d33f59;
+  }

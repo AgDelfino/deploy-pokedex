@@ -1,0 +1,383 @@
+.main_container{
+    background-color: rgb(55, 55, 122);
+    background: linear-gradient(rgba(25, 25, 30, 0.91), rgba(55, 55, 122, 0.87));
+    backdrop-filter: blur(4px);
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    transform: translateX(300px);
+    transition: .5s ease-in-out transform;
+    padding: .5rem;
+    opacity: 5px;
+    
+}
+.filters_container{
+   gap: 2rem;
+}
+
+.activeFilters{
+    transform: translateX(0);
+}
+
+.type_buttons{
+   position: relative;
+   width: 3rem;
+   height: 3rem;
+   background-size: cover;
+   background-color: transparent;
+   border: none;
+   margin: .5rem;
+   cursor: pointer;
+   transition: .3s ease-in-out all;
+}  
+
+.type_buttons:hover{
+   background-color: #fec304;
+   border-radius: 35%;
+}
+
+.active_type{
+   background-color: beige;
+   border-radius: 10px
+}
+
+.sort_buttons_container{
+   display: flex;
+   justify-content: space-between;
+}
+
+.sort_button{
+   background-color: white;
+   width: 3rem;
+   height: 3rem;
+   transition: .3s ease-in-out all;
+}
+
+.sort_active{
+   background-color: yellow;
+}
+
+.db_api_buttons_container{
+   display: flex;
+   justify-content: space-between;
+}
+
+.filter_button_active{
+   background-color: yellow;
+}
+
+.title_type{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.exit_button {
+   display: flex;
+   position: absolute;
+   width: 3rem;
+   height: 3rem;
+   right: 15px;
+   cursor: pointer;
+   color: #e1def1;
+   transition: 0.1s ease-in-out all;
+   align-items: center;
+   background: transparent;
+   border: none;
+ }
+
+.electric{
+   position: relative; 
+   background-image: url('../../images/typesIcons/electric.png');
+}
+.normal{
+   position: relative; 
+   background-image: url('../../images/typesIcons/normal.png');
+}
+.fire{
+   position: relative; 
+   background-image: url('../../images/typesIcons/fire.png');
+}
+.psychic{
+   position: relative;
+   background-image: url('../../images/typesIcons/psychic.png');
+}
+.fighting{
+   position: relative;
+   background-image: url('../../images/typesIcons/fighting.png');
+}
+.water{
+   position: relative;
+   background-image: url('../../images/typesIcons/water.png');
+}
+.grass{
+   position: relative;
+   background-image: url('../../images/typesIcons/grass.png');
+}
+.steel{
+   position: relative;
+   background-image: url('../../images/typesIcons/steel.png');
+}
+.dragon{
+   position: relative;
+   background-image: url('../../images/typesIcons/dragon.png');
+}
+.dark{
+   position: relative;
+   background-image: url('../../images/typesIcons/dark.png');
+}
+.flying{
+   position: relative;
+   background-image: url('../../images/typesIcons/flying.png');
+}
+.poison{
+   position: relative;
+   background-image: url('../../images/typesIcons/poison.png');
+}
+.ground{
+   position: relative;
+   background-image: url('../../images/typesIcons/ground.png');
+}
+.rock{
+   position: relative;
+   background-image: url('../../images/typesIcons/rock.png');
+}
+.bug{
+   position: relative;
+   background-image: url('../../images/typesIcons/bug.png');
+}
+.ghost{
+   position: relative;
+   background-image: url('../../images/typesIcons/ghost.png');
+}
+.ice{
+   position: relative;
+   background-image: url('../../images/typesIcons/ice.png');
+}
+.fairy{
+   position: relative;
+   background-image: url('../../images/typesIcons/fairy.png');
+}
+.unknown{
+   position: relative;
+   background-image: url('../../images/typesIcons/unknown.png');
+}
+.shadow{
+   position: relative;
+   background-image: url('../../images/typesIcons/shadow.png');
+}
+
+
+
+/* .electric:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'electric';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+   
+}
+.normal:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'normal';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.fire:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'fire';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.psychic:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'psychic';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.fighting:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'fighting';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.water:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'water';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.grass:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'grass';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.steel:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'steel';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.dragon:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'dragon';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.dark:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'dark';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.flying:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'flying';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.poison:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'poison';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.ground:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'ground';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.rock:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'rock';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.bug:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'bug';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.ghost:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'ghost';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.ice:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'ice';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.fairy:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'fairy';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.unknown:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'unknown';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+}
+.shadow:hover::after{
+   position: absolute;
+   top: 0;
+   content: 'shadow';
+   height: 20px;
+   padding: 5px;
+   background: white;
+   opacity: .8;
+
+} */
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+.pages{
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style-type: none;
+}
+.pagination_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.pag_button{
+    display: flex;
+    padding: 0;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    color: #fec304;
+    font-family: var(--font-title);
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 0 0 2px black;
+}
+
+.active_top{
+    height: 44px;
+    width: 44px;
+    transform: translateY(-25px) rotate(-20deg);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .2s ease-in-out transform;
+    background-image: url('../../images/poke-top.png');
+}
+
+.active_bot{
+    height: 44px;
+    width: 44px;
+    transform: translateY(10px) rotate(10deg);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .2s ease-in-out transform;
+    background-image: url('../../images/poke-bottom.png');
+}
+
+.pag_button:hover > .poketop{
+    transform: translateY(-25px) rotate(-20deg);
+}
+
+.pag_button:hover > .pokebot{
+    transform: translateY(10px) rotate(10deg)
+}
+
+
+.pokebot, .poketop{
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .2s ease-in-out transform;
+}
+
+.poketop{
+    background-image: url('../../images/poke-top.png');
+}
+.pokebot{
+    background-image: url('../../images/poke-bottom.png');
+}
+.prev_container, .next_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 4.2rem;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in-out transform;
+}
+
+@keyframes nextArrow {
+
+}
+
+
+@keyframes prevArrow {
+    
+}
+
+.prev_container:hover {
+    transform: translateX(-5px);
+}
+
+.next_container:hover{
+    transform: translateX(5px);
+}
+
+.prev, .next {
+    color: #fec304 ;
+    width: 4.2rem;
+    height: 4.2rem;
+    fill: #fec304;
+    stroke: black;
+}
+
+
+

@@ -1,0 +1,19 @@
+.search_input{
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #294397;
+    border:  3px solid transparent;
+    outline: none;
+    transition: .3s ease-in-out all;
+    margin-right: 10px;
+}
+
+.search_input:focus{
+    border: 3px solid #294397;
+}
+
+.form_container{
+    display: flex;
+}

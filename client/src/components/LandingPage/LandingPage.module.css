@@ -1,0 +1,52 @@
+.lading_container{
+   display: flex;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   align-items: center;
+   justify-content: flex-start;
+   height: 100vh;
+   flex-direction: column;
+   background-image: url('../../images/landing2cort.jpg');
+   background-position: center;
+   background-size:cover;
+   background-repeat:none;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.title{
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 50px;
+    color: #ffce31;
+    text-shadow: -2px -2px 1px #373299, 2px 2px 1px #373299, -2px 2px 1px #373299, 2px -2px 1px #373299, 8px 9px 1px black;
+    margin-bottom: 0;
+}
+
+.landing_button{
+    width: 100px;
+    height: 65px;
+    border-radius: 10px;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ffce31;
+    background-color: #343099;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 1px black;
+    transition: .2s ease-in-out all;
+}
+
+.landing_button:focus{
+    box-shadow: none;
+}
+
+
+
+

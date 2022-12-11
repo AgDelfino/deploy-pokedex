@@ -1,0 +1,202 @@
+.h1_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.father_container {
+   display: flex;
+   justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 3rem;
+}
+
+.input_container {
+  position: relative;
+  width: 600px;
+}
+
+.create_form {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input {
+  height: 40px;
+  width: 90%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0.3rem solid #fec304;
+  color: #294397;
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.error {
+  text-align: left;
+  position: absolute;
+  margin-top: 0;
+  font-weight: bold;
+  color: red;
+  left: 345px;
+  top: 10px;
+  text-align: right;  
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-right: 5rem;
+}
+.button_container {
+  display: flex;
+  width: 250%;
+  flex-wrap: wrap;
+}
+.select_type_title {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffce31;
+  text-shadow: -2px -2px 1px #373299, 2px 2px 1px #373299, -2px 2px 1px #373299,
+    2px -2px 1px #373299, 6px 6px 6px black;
+  width: 500px;
+  height: 20px;
+  text-align: left;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+.types_create_container {
+  display: flex;
+}
+
+.type_buttons {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+.type_buttons:hover {
+  background-color: #fec304;
+  border-radius: 35%;
+}
+
+.create_button {
+  border-radius: 10px;
+  font-size: 3rem;
+  width: 20rem;
+  height: 7rem;
+  color: #294397;
+  font-family: "Adventure";
+  box-shadow: 3px 4px 0 black;
+  background: #fec304;
+  backdrop-filter: blur(1px);
+  transition: 0.2s ease-in-out all;
+  padding-left: 1px;
+}
+
+.button_container {
+  display: flex;
+  width: 100vh;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.electric {
+  position: relative;
+  background-image: url("../../images/typesIcons/electric.png");
+}
+.normal {
+  position: relative;
+  background-image: url("../../images/typesIcons/normal.png");
+}
+.fire {
+  position: relative;
+  background-image: url("../../images/typesIcons/fire.png");
+}
+.psychic {
+  position: relative;
+  background-image: url("../../images/typesIcons/psychic.png");
+}
+.fighting {
+  position: relative;
+  background-image: url("../../images/typesIcons/fighting.png");
+}
+.water {
+  position: relative;
+  background-image: url("../../images/typesIcons/water.png");
+}
+.grass {
+  position: relative;
+  background-image: url("../../images/typesIcons/grass.png");
+}
+.steel {
+  position: relative;
+  background-image: url("../../images/typesIcons/steel.png");
+}
+.dragon {
+  position: relative;
+  background-image: url("../../images/typesIcons/dragon.png");
+}
+.dark {
+  position: relative;
+  background-image: url("../../images/typesIcons/dark.png");
+}
+.flying {
+  position: relative;
+  background-image: url("../../images/typesIcons/flying.png");
+}
+.poison {
+  position: relative;
+  background-image: url("../../images/typesIcons/poison.png");
+}
+.ground {
+  position: relative;
+  background-image: url("../../images/typesIcons/ground.png");
+}
+.rock {
+  position: relative;
+  background-image: url("../../images/typesIcons/rock.png");
+}
+.bug {
+  position: relative;
+  background-image: url("../../images/typesIcons/bug.png");
+}
+.ghost {
+  position: relative;
+  background-image: url("../../images/typesIcons/ghost.png");
+}
+.ice {
+  position: relative;
+  background-image: url("../../images/typesIcons/ice.png");
+}
+.fairy {
+  position: relative;
+  background-image: url("../../images/typesIcons/fairy.png");
+}
+.unknown {
+  position: relative;
+  background-image: url("../../images/typesIcons/unknown.png");
+}
+.shadow {
+  position: relative;
+  background-image: url("../../images/typesIcons/shadow.png");
+}
