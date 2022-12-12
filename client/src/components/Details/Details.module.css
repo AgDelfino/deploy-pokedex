@@ -22,10 +22,11 @@
 
 .poke_img {
   height: 200px;
+  margin-left: 220px;
 }
 
 .stats_container {
-  margin: 0 auto;
+  margin: 3rem auto 0;
   width: 500px;
   display: flex;
   flex-direction: row;
@@ -33,10 +34,7 @@
   align-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  /* height: 59px; */
-  margin-top: -36px;
   gap: 1rem;
-  margin-top: 4rem;
 }
 
 .stats {
