@@ -37,6 +37,12 @@
   gap: 1rem;
 }
 
+.img_container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .stats {
   font-family: "VT323", monospace;
   font-size: 14px;
