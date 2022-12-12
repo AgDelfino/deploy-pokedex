@@ -153,7 +153,7 @@ export function formErrors(input, globalPokemons) {
   else if (input.height < 1 || input.height > 10)
     copyError.height = "Select between 1 and 10";
 
-  if (!input.weight) copyError.weight = "Must set a Weight (1 to 100)";
+  if (!input.weight) copyError.weight = "Must set a Weight (1 to 500)";
   else if (input.weight < 1 || input.weight > 500)
     copyError.weight = "Select between 1 and 500";
 
