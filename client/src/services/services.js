@@ -135,27 +135,27 @@ export function formErrors(input, globalPokemons) {
 
   if (!input.attack) copyError.attack = "Must set Attack (1 to 999)";
   else if (input.attack < 1 || input.attack > 999)
-    copyError.attack = "Attack must be between 1 and 999";
+    copyError.attack = "Select between 1 and 999";
 
   if (!input.defense) copyError.defense = "Must set Defense (1 to 999)";
   else if (input.defense < 1 || input.defense > 999)
-    copyError.defense = "Defense must be between 1 and 999";
+    copyError.defense = "Select between 1 and 999";
 
   if (!input.hp) copyError.hp = "Must set HP (1 to 999)";
   else if (input.hp < 1 || input.hp > 999)
-    copyError.hp = "Defense must be between 1 and 999";
+    copyError.hp = "Select between 1 and 999";
 
   if (!input.speed) copyError.speed = "Must set a Speed (1 to 999)";
   else if (input.speed < 1 || input.speed > 999)
-    copyError.speed = "Speed must be between 1 and 999";
+    copyError.speed = "Select between 1 and 999";
 
   if (!input.height) copyError.height = "Must set a Height (1 to 10)";
   else if (input.height < 1 || input.height > 10)
-    copyError.height = "Height must be between 1 and 10 mts";
+    copyError.height = "Select between 1 and 10";
 
   if (!input.weight) copyError.weight = "Must set a Weight (1 to 100)";
-  else if (input.weight < 1 || input.weight > 100)
-    copyError.weight = "Weight must be between 1 and 10 pounds";
+  else if (input.weight < 1 || input.weight > 500)
+    copyError.weight = "Select between 1 and 500";
 
   return copyError;
 }
