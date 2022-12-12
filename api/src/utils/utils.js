@@ -10,7 +10,7 @@ async function getApiPokemons() {
   let pokemonsApi = [];
 
   await newAxios
-    .get("https://pokeapi.co/api/v2/pokemon?limit=60")
+    .get("https://pokeapi.co/api/v2/pokemon?limit=120")
     .then(async (response) => {
       let arrResults = response.data.results;
       let arrPromises = [];
