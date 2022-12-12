@@ -20,11 +20,13 @@
 const {getTypes} = require('./src/utils/utils')
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
+require('dotenv').config() 
+const {PORT} = process.env
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  server.listen(3001, async () => {
+  server.listen(PORT, async () => {
     await getTypes()
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+    console.log('litening on port', PORT); // eslint-disable-line no-console
   });
 });
