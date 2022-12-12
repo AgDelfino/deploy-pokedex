@@ -56,7 +56,9 @@ const Details = () => {
                   />
                 </svg>
               </button>
+              <div className={styles.img_container}>
               <img className={styles.poke_img} src={pokemonDetails.image} />
+              </div>
               <div className={styles.stats_container}>
                 <span
                   className={styles.stats}
