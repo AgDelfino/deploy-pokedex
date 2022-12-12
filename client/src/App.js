@@ -7,7 +7,7 @@ import Create from "./components/Create/Create";
 import About from "./components/About/About";
 import axios from "axios"
 
-axios.defaults.baseURL = 'https://deploy-pokedex-production.up.railway.app/'
+axios.defaults.baseURL = 'http://localhost:3001'
 
 function App() {
   return (
