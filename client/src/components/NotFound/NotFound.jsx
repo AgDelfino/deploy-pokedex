@@ -6,7 +6,7 @@ import styles from './NotFound.module.css'
 const NotFound = ({ msg }) => {
   return (
     <div>
-      <div>
+      <div className={styles.title_container}>
         <h1>{msg}</h1>
       </div>
       <div className={styles.img_container}>
