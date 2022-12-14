@@ -116,6 +116,7 @@ const Create = () => {
                 name="attack"
                 type="number"
                 onChange={(e) => handleChange(e)}
+                maxLength="3"
               ></input>
               {error.attack && <p className={styles.error}>{error.attack}</p>}
             </div>
@@ -127,6 +128,7 @@ const Create = () => {
                 name="defense"
                 type="number"
                 onChange={(e) => handleChange(e)}
+                maxLength="3"
               ></input>
               {error.defense && <p className={styles.error}>{error.defense}</p>}
             </div>
@@ -138,6 +140,7 @@ const Create = () => {
                 name="hp"
                 type="number"
                 onChange={(e) => handleChange(e)}
+                maxLength="3"
               ></input>
               {error.hp && <p className={styles.error}>{error.hp}</p>}
             </div>
@@ -149,6 +152,7 @@ const Create = () => {
                 name="speed"
                 type="number"
                 onChange={(e) => handleChange(e)}
+                maxLength="3"
               ></input>
               {error.speed && <p className={styles.error}>{error.speed}</p>}
             </div>
@@ -160,6 +164,7 @@ const Create = () => {
                 name="height"
                 type="number"
                 onChange={(e) => handleChange(e)}
+                maxLength="3"
               ></input>
               {error.height && <p className={styles.error}>{error.height}</p>}
             </div>
@@ -171,6 +176,7 @@ const Create = () => {
                 name="weight"
                 type="number"
                 onChange={(e) => handleChange(e)}
+                maxLength="3"
               ></input>
               {error.weight && <p className={styles.error}>{error.weight}</p>}
             </div>
