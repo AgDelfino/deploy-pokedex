@@ -74,10 +74,10 @@ const Details = () => {
                 >{`Speed: ${pokemonDetails.speed}`}</span>
                 <span
                   className={styles.stats}
-                >{`Height: ${pokemonDetails.height} mts`}</span>
+                >{`Height: ${pokemonDetails.height}fts`}</span>
                 <span
                   className={styles.stats}
-                >{`Weight: ${pokemonDetails.weight} kg`}</span>
+                >{`Weight: ${pokemonDetails.weight}pds`}</span>
                 {pokemonDetails.types.map((type) => {
                   return <span className={styles.stats}>{type.name}</span>;
                 })}
