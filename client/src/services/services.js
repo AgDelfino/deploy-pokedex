@@ -28,10 +28,10 @@ export function filterPokemons(pokemons, { typeFilter }) {
   }
   if (typeFilter[0] && !typeFilter[1]) {
     const filteredPokemons = pokemons.filter((pokemon) => {
-      const hasFilterType = pokemon.type?.find((t) => t.name === typeFilter[0]) && pokemon.type.length === 1;
+      const hasFilterType = pokemon.type?.find((t) => t.name === typeFilter[0])
       const hasFilterTypes = pokemon.types?.find(
         (t) => t.name === typeFilter[0]
-      ) && pokemon.types.length === 1
+      )
 
       if (hasFilterType || hasFilterTypes) {
         return pokemon;
