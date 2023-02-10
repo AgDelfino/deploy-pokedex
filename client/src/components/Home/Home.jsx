@@ -84,7 +84,7 @@ const Home = () => {
     <>
   { 
   
-    !pokemonsGlobal.length ? <Loading/> :
+    !pokemonsGlobal.length && !searchError ? <Loading/> :
     <div>
       <NavBar />
       <div className={styles.searchbar_container}>
