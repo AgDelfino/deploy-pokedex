@@ -6,7 +6,6 @@ const Pokemon = ({ id, name, image, attack, type }) => {
 
 
   useEffect(()=> {
-    console.log(type[0]);
   }, [type])
 
   return (
